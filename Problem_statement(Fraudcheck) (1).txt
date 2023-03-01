@@ -1,0 +1,10 @@
+Use Random Forest to prepare a model on fraud data 
+treating those who have taxable_income <= 30000 as "Risky" and others are "Good"
+
+Here after using grid search using stratified k-fold splits and Train Test Splits Stratifying Target feature
+on the data we found out that our tain & test accuracy are quite uncomparable. The data is imbalanced. Hence we used SMOTE 
+,Adaptive Synthetic Sampling & Hybridization technique on the data & then compared the before & after scores for each technique.
+
+Then we used Random Forest hyperparameter tuning by two methods randomized Search Cross Validation
+& grid Search Cross Validation & obtained the train test accuracy scores which were quite comparable
+& slightly improved this time & then tried to visualize the results using a decision tree.
